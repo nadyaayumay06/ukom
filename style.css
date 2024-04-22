@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;   
+}
+body{
+    display: flex;
+    background-color: azure;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;  
+}
+.form{
+    position: relative;
+    display: grid;
+}
+.value{
+    height: 80px;
+    width: 240px;
+    text-align: right;
+    padding: 10px;
+    font-size: 20px;
+    grid-column: span 4;
+}
+.form span{
+    height: 60px;
+    width: 60px;
+    background-color: rgb(59, 59, 59);
+    color: #fff;
+    border: 1px solid rgba(0,0,0,1);
+    place-items: center;
+    display: grid;
+}
+.form span.equal{
+    background-color: cornflowerblue;
+    height: 120px;
+    grid-row: span 2;
+}
+.form span.clear{
+    background-color: hotpink;
+}
+.form span:active{
+    background-color: greenyellow;
+    color: black;
+}
